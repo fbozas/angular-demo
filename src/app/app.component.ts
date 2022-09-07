@@ -6,15 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- courses = [
+ courses: any; 
+
+ loadCourses(){
+  this.courses = [
     {id: 1, title: "Java"},
     {id: 2, title: "C#"},
     {id:3, title: "Python"},
     {id:4, title: "JavaScript"}
- ]
+  ];
+ }
 
  onAdd(){
-  this.courses.push({id:5, title:"Another Course"})
+  this.courses.push({id:5, title:"Another Course"});
  }
 
  onRemove(course:any){
