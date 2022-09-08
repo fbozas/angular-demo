@@ -25,6 +25,13 @@ export class PostsComponent implements OnInit {
     })
   }
 
+  updatePost(post:any){
+    this.http.patch(`${this.url}/${post.id}`, {isRead:true})
+      .subscribe(response => {
+        console.log(response);
+      });
+  }
+
   ngOnInit(): void {
   }
 
