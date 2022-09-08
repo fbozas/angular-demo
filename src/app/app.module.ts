@@ -10,6 +10,7 @@ import { AuthorsService } from './authors.service';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from 'src/summary.pipe';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { CourseFormComponent } from './course-form/course-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     CourseComponent,
     AuthorsComponent,
     SummaryPipe,
-    ContactFormComponent
+    ContactFormComponent,
+    CourseFormComponent
   ],
   imports: [
     BrowserModule,
