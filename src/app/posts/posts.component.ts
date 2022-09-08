@@ -7,10 +7,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
+  posts: any;
 
   constructor(private http: HttpClient) { 
     http.get('https://jsonplaceholder.typicode.com/posts').subscribe(response =>{
-      console.log(response);
+      this.posts = response;
     });
   }
 
