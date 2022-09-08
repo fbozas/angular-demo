@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from 'src/summary.pipe';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CourseFormComponent } from './course-form/course-form.component';
+import { PostsComponent } from './posts/posts.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { CourseFormComponent } from './course-form/course-form.component';
     AuthorsComponent,
     SummaryPipe,
     ContactFormComponent,
-    CourseFormComponent
+    CourseFormComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     CoursesService,
