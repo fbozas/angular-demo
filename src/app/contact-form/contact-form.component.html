@@ -1,4 +1,4 @@
-<form>
+<form #f="ngForm" (ngSubmit)="submit(f)">
     <div class="form-group">
         <label for="firstname">FirstName</label>
         <input 
@@ -22,7 +22,14 @@
     </div>
     <div class="form-group">
         <label for="comment">Comment</label>
-        <textarea id="comment" cols="30" rows="10" class="form-control">
+        <textarea 
+            ngModel
+            name="message"
+            #message="ngModel"
+            id="comment" 
+            cols="30" 
+            rows="10" 
+            class="form-control">
 
         </textarea>
         <button class="btn btn-primary">
