@@ -52,6 +52,10 @@ import { RouterModule } from '@angular/router';
       {
         path: 'contact',
         component: ContactComponent
+      },
+      {
+        path: 'posts',
+        component: PostsComponent
       }
     ])
   ],
