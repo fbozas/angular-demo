@@ -19,7 +19,8 @@ import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    MatCheckboxModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -57,7 +59,8 @@ import { RouterModule } from '@angular/router';
         path: 'posts',
         component: PostsComponent
       }
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [
     CoursesService,
