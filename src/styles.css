@@ -11,3 +11,8 @@
     border-bottom: 3px solid orange;
     color: white;
 }
+
+.no-radius{
+    border-radius: 0!important;
+}
+
