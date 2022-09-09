@@ -13,6 +13,11 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { CourseFormComponent } from './course-form/course-form.component';
 import { PostsComponent } from './posts/posts.component';
 import {HttpClientModule} from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import {HttpClientModule} from '@angular/common/http';
     SummaryPipe,
     ContactFormComponent,
     CourseFormComponent,
-    PostsComponent
+    PostsComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    TeamComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
