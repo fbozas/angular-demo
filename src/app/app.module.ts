@@ -31,6 +31,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
+    MatTabsModule,
     RouterModule.forRoot([
       {
         path: '',
