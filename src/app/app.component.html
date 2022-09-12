@@ -2,11 +2,7 @@
 <router-outlet></router-outlet>
 <app-footer></app-footer> -->
 
-<mat-checkbox
-    #showDetails
-    [checked]="isChecked"
-    (change)="onChange($event)">
-    Subscribe to Newsletter
-</mat-checkbox>
-
-<div *ngIf="showDetails.checked">Show Details</div>
+<mat-radio-group>
+    <mat-radio-button value="0" checked="true">Male</mat-radio-button>
+    <mat-radio-button value="1">Female</mat-radio-button>
+</mat-radio-group>

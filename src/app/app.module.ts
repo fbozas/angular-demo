@@ -21,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     FormsModule,
     HttpClientModule,
     MatCheckboxModule,
+    MatRadioModule,
     RouterModule.forRoot([
       {
         path: '',
