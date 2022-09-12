@@ -11,10 +11,5 @@ import { CourseFormComponent } from './course-form/course-form.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  constructor(private dialog: MatDialog){}
-
-  openDialog(){
-    this.dialog.open(AuthorsComponent);
-  }
+  title: string = '';
 }
