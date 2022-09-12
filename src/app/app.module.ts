@@ -30,6 +30,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatNativeDateModule,
     MatIconModule,
     MatButtonModule,
+    MatTooltipModule,
     RouterModule.forRoot([
       {
         path: '',
