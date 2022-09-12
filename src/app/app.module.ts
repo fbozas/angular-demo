@@ -24,6 +24,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatRadioModule,
     NoopAnimationsModule,
     MatSelectModule,
+    ReactiveFormsModule,
+    MatInputModule,
     RouterModule.forRoot([
       {
         path: '',
