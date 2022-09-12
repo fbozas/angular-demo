@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatComponentsModule } from './mat-components/mat-components.module';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 
 
@@ -40,7 +41,8 @@ import { MatComponentsModule } from './mat-components/mat-components.module';
     FooterComponent,
     HomeComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,
