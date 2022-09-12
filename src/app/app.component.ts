@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- canSave = true;
+  isChecked = false;
+
+  onChange($event: any){
+    console.log($event);
+  }
 }
