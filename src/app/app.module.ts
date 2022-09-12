@@ -32,6 +32,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatButtonModule,
     MatTooltipModule,
     MatTabsModule,
+    MatDialogModule,
     RouterModule.forRoot([
       {
         path: '',
