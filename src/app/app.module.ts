@@ -22,6 +22,9 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +47,8 @@ import {MatRadioModule} from '@angular/material/radio';
     HttpClientModule,
     MatCheckboxModule,
     MatRadioModule,
+    NoopAnimationsModule,
+    MatSelectModule,
     RouterModule.forRoot([
       {
         path: '',

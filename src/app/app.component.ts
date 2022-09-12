@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isChecked = false;
-
-  onChange($event: any){
-    console.log($event);
-  }
+ colors = [
+    {id:1, name: "red"},
+    {id:2, name: "blue"},
+    {id:3, name: "yellow"}
+ ]
 }
