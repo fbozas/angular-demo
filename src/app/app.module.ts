@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatComponentsModule } from './mat-components/mat-components.module';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 
 
@@ -42,7 +43,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     HomeComponent,
     TeamComponent,
     ContactComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleCasePipe
   ],
   imports: [
     BrowserModule,
