@@ -24,7 +24,13 @@ export class PostsCompleteIndexComponent implements OnInit {
   }
 
   delete(post: PostDto){
-    
+    if(post.id !=undefined){
+      if(confirm("Are you sure you want to delete this post?")){
+        this.service.delete(post.id).subscribe(() => {
+          this.loadPosts();
+        });
+      }
+    }
   }
 
 }
