@@ -76,6 +76,10 @@ import { PostsCompleteCreateComponent } from './posts-complete/posts-complete-cr
       {
         path: 'posts',
         component: PostsComponent
+      },
+      {
+        path: 'posts-complete',
+        component: PostsCompleteIndexComponent
       }
     ]),
     BrowserAnimationsModule

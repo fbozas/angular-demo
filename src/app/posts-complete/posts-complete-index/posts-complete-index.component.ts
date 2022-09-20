@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from 'src/app/post.service';
+import { PostDto } from 'src/app/postDto';
 
 @Component({
   selector: 'app-posts-complete-index',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsCompleteIndexComponent implements OnInit {
 
-  constructor() { }
+  posts: any;
+  constructor(private service: PostService) { }
 
   ngOnInit(): void {
+    this.loadPosts();
+  }
+
+  loadPosts(){
+    this.service.getAll().subscribe(posts => {
+      this.posts = posts;
+      console.log(posts);
+    })
+  }
+
+  delete(post: PostDto){
+    
   }
 
 }
