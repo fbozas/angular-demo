@@ -25,6 +25,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatComponentsModule } from './mat-components/mat-components.module';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasePipe } from './title-case.pipe';
+import { PostsCompleteIndexComponent } from './posts-complete/posts-complete-index/posts-complete-index.component';
+import { PostsCompleteFormComponent } from './posts-complete/posts-complete-form/posts-complete-form.component';
+import { PostsCompleteEditComponent } from './posts-complete/posts-complete-edit/posts-complete-edit.component';
+import { PostsCompleteCreateComponent } from './posts-complete/posts-complete-create/posts-complete-create.component';
 
 
 
@@ -44,7 +48,11 @@ import { TitleCasePipe } from './title-case.pipe';
     TeamComponent,
     ContactComponent,
     FavoriteComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    PostsCompleteIndexComponent,
+    PostsCompleteFormComponent,
+    PostsCompleteEditComponent,
+    PostsCompleteCreateComponent    
   ],
   imports: [
     BrowserModule,
