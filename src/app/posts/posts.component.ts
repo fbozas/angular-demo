@@ -19,12 +19,14 @@ export class PostsComponent implements OnInit {
     input.value = '';
     this.service.create(post)
     .subscribe(response => {
-      this.posts.unshift(post);
+      this.loadPosts();
       console.log(response);
     })
   }
 
-  updatePost(post:any){    
+  updatePost(post:any){
+    console.log(post);   
+    post.title += ' Updated'; 
       this.service.update(post)
       .subscribe(response => {
         console.log(response);
@@ -40,11 +42,15 @@ export class PostsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  loadPosts(){
     this.service.getAll()
     .subscribe(response =>{
         this.posts = response;
     });
+  }
+
+  ngOnInit(): void {
+    this.loadPosts();
   }
 
 }
