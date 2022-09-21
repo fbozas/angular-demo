@@ -1,1 +1,10 @@
-<p>posts-complete-edit works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Edit Post</h2>
+            <app-posts-complete-form *ngIf="model" [model]="model" (onSaveChanges)="saveChanges($event)">
+
+            </app-posts-complete-form>
+        </div>
+    </div>
+</div>
