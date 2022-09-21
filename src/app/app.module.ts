@@ -80,6 +80,10 @@ import { PostsCompleteCreateComponent } from './posts-complete/posts-complete-cr
       {
         path: 'posts-complete',
         component: PostsCompleteIndexComponent
+      },
+      {
+        path: 'posts-complete/create',
+        component: PostsCompleteCreateComponent
       }
     ]),
     BrowserAnimationsModule

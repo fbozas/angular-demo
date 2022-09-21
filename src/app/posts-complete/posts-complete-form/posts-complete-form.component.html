@@ -1,1 +1,15 @@
-<p>posts-complete-form works!</p>
+<form (submit)="saveChanges()" [formGroup]="form">
+    <input type="hidden" formControlName="id">
+
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input
+            formControlName="title"
+            class="form-control"
+            type="text"
+            placeholder="title">
+    </div>
+    <button class="btn btn-primary">
+        Submit
+    </button>
+</form>
