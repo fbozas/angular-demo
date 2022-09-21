@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PostService } from 'src/app/post.service';
+import { PostDto } from 'src/app/postDto';
 
 @Component({
   selector: 'app-posts-complete-create',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostsCompleteCreateComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router, 
+    private service: PostService) { }
 
   ngOnInit(): void {
   }
 
+  saveChanges(postDto: PostDto){
+    this.service.create(postDto).subscribe((response) => {
+      this.router.navigate(['posts-complete']);
+    });
+  }
 }
